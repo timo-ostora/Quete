@@ -2,10 +2,10 @@
   background-color: var(--primary-color-1);
   color: var(--white);
   overflow: hidden;
+  padding-top: 100px;
 }
 .hero .container {
   position: relative;
-  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,9 +38,6 @@
 }
 
 @media (min-width: 992px) {
-  .hero {
-    padding-top: 100px;
-  }
   .hero-banner {
     position: relative;
     display: block;

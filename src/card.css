@@ -51,7 +51,7 @@
 
 .card-content {
   display: grid;
-  padding: 12px 16px;
+  padding: 8px;
 }
 .card-content h3 {
   text-transform: capitalize;
@@ -75,6 +75,10 @@
   width: 36px;
   height: 36px;
   cursor: pointer;
+}
+.user-name {
+  flex: 1;
+  text-wrap: nowrap;
 }
 .card .user .pill {
   margin-left: auto;

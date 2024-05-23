@@ -1,10 +1,16 @@
 .recipes {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  display: grid;
+  place-items: center;
+  gap: 16px;
 }
 
-.recipes .card {
-  width: 280px;
+@media (min-width: 400px) {
+  .recipes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .recipes {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

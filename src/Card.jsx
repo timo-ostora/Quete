@@ -54,17 +54,13 @@ function Card(props) {
             <h6 className="c-caption-soft strikethrough">${props.oldPrice}</h6>
           )}
         </div>
-        <div className="user">
-          <div className="avatar">
-            <img
-              className="img-cover"
-              src={props.avatar}
-              alt="profile pictur"
-            />
-          </div>
-          <h5>{props.userName}</h5>
-          {props.pro && <Pill text="Pro" size="body-xs"></Pill>}
+      </div>
+      <div className="user">
+        <div className="avatar">
+          <img className="img-cover" src={props.avatar} alt="profile pictur" />
         </div>
+        <p className="c-body body-sm user-name">{props.userName}</p>
+        {props.pro && <Pill text="Pro" size="body-xs"></Pill>}
       </div>
     </div>
   );
