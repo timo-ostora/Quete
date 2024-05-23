@@ -1,0 +1,9 @@
+.call {
+  background-color: var(--primary-color-4);
+  text-align: center;
+}
+.call .container {
+  display: grid;
+  place-items: center;
+  gap: 16px;
+}

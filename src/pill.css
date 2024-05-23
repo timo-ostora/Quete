@@ -1,0 +1,9 @@
+/* Pill */
+.pill {
+  padding: 2px 8px;
+  border-radius: var(--radius-small);
+  background-color: var(--posirive-500);
+  width: fit-content;
+  color: var(--white);
+  cursor: pointer;
+}

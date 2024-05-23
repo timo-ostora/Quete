@@ -1,0 +1,46 @@
+/* icon box */
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-small);
+  gap: 4px;
+  padding-inline: 8px;
+  cursor: pointer;
+  transition: var(--transition-easing-quick) var(--transition-duration-smooth);
+  user-select: none;
+}
+.icon-box.primary {
+  background-color: var(--primary-color-3);
+}
+.icon-box.dark:where(:hover, :focus-visible) {
+  background-color: var(--primary-color-1);
+}
+.icon-box.dark {
+  background-color: var(--gray-strong-500-main);
+}
+.icon-box.dark:where(:hover, :focus-visible) {
+  background-color: var(--gray-strong-600);
+}
+.icon-box.red {
+  background-color: var(--negative-25);
+}
+.icon-box.red:where(:hover, :focus-visible) {
+  background-color: var(--negative-100);
+}
+.icon-box.yellow {
+  background-color: var(--yellow-25);
+}
+.icon-box.yellow:where(:hover, :focus-visible) {
+  background-color: var(--yellow-100);
+}
+.icon-box.yellow:active {
+  background-color: var(--yellow-500);
+}
+
+.icon-box.full-yellow {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--yellow-100);
+  border-radius: var(--radius-full);
+}

@@ -1,0 +1,35 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 4;
+}
+
+header.active {
+  animation: slide-in 500ms ease forwards;
+  height: 72px;
+  background-color: var(--primary-color-2);
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header .logo {
+  height: 48px;
+}

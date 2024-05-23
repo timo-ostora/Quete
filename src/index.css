@@ -1,0 +1,350 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2024  Timo-ostora
+ */
+
+/*-----------------------------------*\
+  #CUSTOM proprerty
+\*-----------------------------------*/
+:root {
+  /* Colors */
+  --primary-color-1: #16697a;
+  --primary-color-2: #489fb5;
+  --primary-color-3: #65b0c1;
+  --primary-color-4: #82c0cc;
+  --secondary-color: #ffa62b;
+  --bg-color: #ede7e3;
+  /*-- default */
+  --primary-900: #0b3b38;
+  --primary-800: #115954;
+  --primary-700: #177770;
+  --primary-600: #1d948c;
+  --primary-500: #23b2a9;
+  --primary-400: #29d0c5;
+  --primary-300: #44d9cf;
+  --primary-200: #61dfd7;
+  --primary-100: #7fe5de;
+  --primary-50: #9debe6;
+  --white: white;
+  --black-900: #000000;
+  --black-800: #1a1a1a;
+  --black-700: #333333;
+  --black-600: #4d4d4d;
+  --black-500: #666666;
+  --black-400: #808080;
+  --black-300: #999999;
+  --black-200: #b3b3b3;
+  --black-100: #cccccc;
+  --black-50: #e6e6e6;
+  --black-25: #f2f2f2;
+  --gray-strong-400: #384762;
+  --gray-strong-500-main: #2f3757;
+  --gray-strong-600: #242a46;
+  --gray-strong-700: #1b2037;
+  --gray-strong-800: #151a2d;
+  --gray-strong-900: #0e1223;
+  --gray-soft-400: #858d9d;
+  --gray-soft-500-main: #667085;
+  --gray-soft-600: #59647a;
+  --gray-soft-700: #525d73;
+  --gray-soft-800: #4a556c;
+  --gray-soft-900: #404a60;
+  --posirive-500: #23c965;
+  --negative-500: #ff554a;
+  --negative-100: #ffe2e0;
+  --negative-25: #fff8f7;
+  --yellow-500: #ffc14a;
+  --yellow-100: #fff3db;
+  --yellow-25: #fffcf6;
+  /* Typography */
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Oswald", sans-serif;
+  /* Font size */
+  --fs-xs: 0.875rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-lg-2x: 2.25rem;
+  --fs-lg-3x: 3rem;
+  --fs-lg-4x: 4rem;
+  --fs-lg-5x: 4.5rem;
+  --fs-lg-6x: 6rem;
+  /* font weight */
+  --w-light: 300;
+  --w-regular: 400;
+  --w-medium: 500;
+  --w-semibold: 700;
+  --w-bold: 800;
+  /* Font size */
+  --lh-xs: 20px;
+  --lh-sm: 24px;
+  --lh-md: 28px;
+  --lh-lg: 34px;
+  --lh-lg-2x: 52px;
+  --lh-lg-3x: 64px;
+  --lh-lg-4x: 84px;
+  --lh-lg-5x: 108px;
+  --lh-lg-6x: 132px;
+  /* letter spacing */
+  --traking-n-025: -0.25px;
+  --traking-p-05: 0.5px;
+  /*radius */
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-extra-large: 32px;
+  --radius-full: 1000px;
+  --radius-circle: 50%;
+  /* box shadow */
+  --shadow-xsm: 0px 2px 2px 2px rgba(0, 0, 0, 16%);
+  --shadow-sm: 0px 8px 10px 0px rgba(0, 0, 0, 6%);
+  --shadow-md: 0px 16px 18px 16px rgba(0, 0, 0, 6%);
+  --shadow-lg: 0px 16px 18px 0px rgba(0, 0, 0, 6%);
+  --shadow-xlg: 0px 32px 36px 0px rgba(0, 0, 0, 6%);
+  --shadow-xlg-2x: 0px 64px 64px 0px rgba(0, 0, 0, 6%);
+  /* transition */
+  --transition-easing-quick: cubic-bezier(0, 0.7, 0.3, 1);
+  --transition-duration-quick: 200ms;
+  --transition-duration-smooth: 500ms;
+}
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+img,
+input,
+select,
+button {
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  height: auto;
+}
+img {
+  height: auto;
+}
+input,
+button,
+select {
+  background: none;
+  border: none;
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+input,
+select {
+  width: 100%;
+  outline: none;
+}
+address {
+  font-style: normal;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+html {
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+}
+body {
+  font-size: var(--fs-md);
+  line-height: var(--lh-md);
+  color: var(--gray-strong-900);
+  background-color: var(--bg-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--black-100);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--black-500);
+}
+/*-----------------------------------*\
+  #TYPOGRAPHY
+\*-----------------------------------*/
+
+.display-xl,
+.display-lg,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+.display-xl {
+  font-size: var(--fs-lg-6x);
+  line-height: var(--lh-lg-6x);
+}
+.display-lg {
+  font-size: var(--fs-lg-5x);
+  line-height: var(--lh-lg-5x);
+}
+
+h1 {
+  font-size: var(--fs-lg-4x);
+  line-height: var(--lh-lg-4x);
+}
+h2 {
+  font-size: var(--fs-lg-3x);
+  line-height: var(--lh-lg-3x);
+}
+h3 {
+  font-size: var(--fs-lg-2x);
+  line-height: var(--lh-lg-2x);
+}
+h4 {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-lg);
+}
+h5 {
+  font-size: var(--fs-md);
+  line-height: var(--lh-md);
+}
+h6 {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+}
+
+.body-md {
+  font-size: var(--fs-md);
+  line-height: var(--lh-md);
+}
+.body-sm {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+}
+.body-xs {
+  font-size: var(--fs-xs);
+  line-height: var(--lh-xs);
+}
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+.c-heading {
+  color: var(--gray-strong-900);
+}
+.c-heading-light {
+  color: var(--white);
+}
+.c-caption {
+  color: var(--primary-900);
+}
+.c-caption-light {
+  color: var(--white);
+}
+.c-caption-soft {
+  color: var(--gray-soft-500-main);
+}
+.c-body {
+  color: var(--gray-strong-900);
+}
+.c-body-light {
+  color: var(--white);
+}
+.c-body-soft {
+  color: var(--gray-soft-500-main);
+}
+.c-body-strong {
+  color: var(--gray-strong-500-main);
+}
+.c-secondary {
+  color: var(--secondary-color);
+}
+.w-light {
+  font-weight: var(--w-light);
+}
+.w-regular {
+  font-weight: var(--w-regular);
+}
+.w-medium {
+  font-weight: var(--w-medium);
+}
+.w-semibold {
+  font-weight: var(--w-semibold);
+}
+.w-bold {
+  font-weight: var(--w-bold);
+}
+.strikethrough {
+  text-decoration: line-through;
+}
+.container {
+  padding-inline: 16px;
+  max-width: 580px;
+  width: 100%;
+  margin-inline: auto;
+}
+section {
+  padding-block: 48px;
+}
+.img-holder {
+  background-color: var(--neutral-80);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/* responsive for larger than 768px screen  */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* responsive for larger than 929px screen  */
+
+@media (min-width: 929px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1265px;
+  }
+}
+
+/* responsive for larger than 1440px screen  */
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
