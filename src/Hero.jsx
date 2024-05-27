@@ -1,9 +1,18 @@
 import Button from "./Button.jsx";
-import heroImg from "./assets/images/imgbin_chef-png.png";
+import video from "./assets/images/food-senimatique.mp4";
 import "./hero.css";
 function Hero() {
   return (
-    <section className="hero">
+    <div className="hero">
+      <video
+        autoPlay={true}
+        preload="true"
+        muted
+        loop
+        className="myVideo img-cover"
+      >
+        <source type="video/mp4" src={video} />
+      </video>
       <div className="container">
         <div className="hero-content">
           <h2 className="hero-title w-semibold c-heading-light">
@@ -18,11 +27,8 @@ function Hero() {
           </p>
           <Button type="outline" text="Get Started"></Button>
         </div>
-        <div className="hero-banner">
-          <img src={heroImg} alt="chef" className="img-cover" />
-        </div>
       </div>
-    </section>
+    </div>
   );
 }
 

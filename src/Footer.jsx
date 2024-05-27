@@ -74,7 +74,7 @@ function Footer() {
               </li>
               <li>
                 <a href="#" className="c-body-light body-midium list-item">
-                  rue madagascar Bloc E appt 2 rabat
+                  350 6th Ave, #203, Windom, Minnesota 56101, United States.
                 </a>
               </li>
             </ul>

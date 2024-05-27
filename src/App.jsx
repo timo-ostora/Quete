@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Header from "./Header.jsx";
 import Hero from "./Hero.jsx";
-import Offers from "./Offers.jsx";
 import Popular from "./Popular.jsx";
 import Mission from "./Mission.jsx";
 import Proces from "./Proces.jsx";
@@ -13,7 +12,6 @@ function App() {
     <>
       <Header></Header>
       <Hero></Hero>
-      <Offers></Offers>
       <Popular></Popular>
       <Mission></Mission>
       <Proces></Proces>

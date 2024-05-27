@@ -1,16 +1,16 @@
 import IconBox from "./IconBox.jsx";
 import icon from "./assets/icons/fi-rr-angle-square-right.svg";
-import img from "./assets/images/offer3.png";
+import img from "./assets/images/offer3.jpg";
 import Title from "./Title.jsx";
-import "./mission.css";
+import "./feature.css";
 function Proces() {
   return (
-    <section className="proces">
+    <section className="feature">
       <div className="container">
-        <div className="proces-centent">
+        <div className="feature-centent">
           <Title
             tag="Accessible"
-            head="Ordering Made Easy: A Flavorful Journey"
+            head="Ordering Made Easy"
             body="At Quete , we’ve simplified the ordering process to ensure that you
             can savor our delicious meals stress-free. Follow these accessible
             steps to indulge in a culinary adventure"

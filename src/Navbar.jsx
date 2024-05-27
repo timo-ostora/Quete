@@ -9,8 +9,8 @@ function Navbar(props) {
             <a
               href="#"
               className={
-                (index == 0 ? "c-body-light" : "c-body-strong") +
-                " navbar-link body-md"
+                "c-body-light navbar-link body-md " +
+                (index == 0 ? "active" : "")
               }
             >
               {item}

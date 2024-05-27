@@ -1,0 +1,45 @@
+.feature .container {
+  display: grid;
+  align-items: center;
+  gap: 24px;
+}
+.feature .sectionTitle {
+  text-align: start;
+}
+.feature .img-banner {
+  overflow: hidden;
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-xlg);
+  height: 393px;
+}
+.feature-centent {
+  display: grid;
+  gap: 8px;
+  padding-block: 16px;
+}
+
+.feature .list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.feature .list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* responsive for larger than 929px screen  */
+
+@media (min-width: 929px) {
+  .feature .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature .img-banner {
+    height: 100%;
+  }
+  .feature.order .img-banner {
+    order: -1;
+  }
+}

@@ -100,11 +100,11 @@
   --radius-circle: 50%;
   /* box shadow */
   --shadow-xsm: 0px 2px 2px 2px rgba(0, 0, 0, 16%);
-  --shadow-sm: 0px 8px 10px 0px rgba(0, 0, 0, 6%);
-  --shadow-md: 0px 16px 18px 16px rgba(0, 0, 0, 6%);
-  --shadow-lg: 0px 16px 18px 0px rgba(0, 0, 0, 6%);
-  --shadow-xlg: 0px 32px 36px 0px rgba(0, 0, 0, 6%);
-  --shadow-xlg-2x: 0px 64px 64px 0px rgba(0, 0, 0, 6%);
+  --shadow-sm: 0px 8px 10px 0px rgba(0, 0, 0, 16%);
+  --shadow-md: 0px 16px 18px 16px rgba(0, 0, 0, 16%);
+  --shadow-lg: 0px 16px 18px 0px rgba(0, 0, 0, 16%);
+  --shadow-xlg: 0px 32px 36px 0px rgba(0, 0, 0, 16%);
+  --shadow-xlg-2x: 0px 64px 64px 0px rgba(0, 0, 0, 16%);
   /* transition */
   --transition-easing-quick: cubic-bezier(0, 0.7, 0.3, 1);
   --transition-duration-quick: 200ms;
@@ -337,7 +337,10 @@ section {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1265px;
+    max-width: 1160px;
+  }
+  .hero .container {
+    max-width: 980px;
   }
 }
 
@@ -346,5 +349,8 @@ section {
 @media (min-width: 1440px) {
   .container {
     max-width: 1400px;
+  }
+  .hero .container {
+    max-width: 980px;
   }
 }
